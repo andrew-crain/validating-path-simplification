@@ -1,0 +1,27 @@
+[project]
+name = "validating-path-simplification"
+version = "0.1.0"
+description = "Companion code to the blog article Validating Path Simplification on https://andrews.wiki. See README.md for more details."
+readme = "README.md"
+authors = [
+    { name = "Andrew Crain", email = "contact@andrews.wiki" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.10.1",
+    "numpy>=2"
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "src/validating_path_simplification"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
